@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "This app is an browser-based organiser that keeps track of thoughts and tasks. The app has both frontend and backend connected and is deployed to Heroku.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcsheng/NoteTaker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcsheng/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/kcsheng/NoteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
