@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const uuid = require("./helpers/uuid");
 const fs = require("fs");
-const notes = require("./db/db.json");
 const util = require("util");
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
@@ -12,9 +11,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./public"));
 
+app.get("/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/notes.html"));
+});
+
 // app.get("/", (req, res) => res.send("Homepage"));
 app.get("/api/notes", (req, res) => {
-  res.status(200).json(notes);
+  // const notes = require("./db/db.json");
+  // res.status(200).json(notes);
+  readFile("./db/db.json")
+    .then((data) => {
+      const dbNotes = JSON.parse(data);
+      res.status(200).json(dbNotes);
+    })
+    .catch((err) => console.error(err));
   console.info(`${req.method} request received to get all notes`);
 });
 
@@ -51,8 +61,8 @@ app.post("/api/notes", (req, res) => {
 // app.get("/api/notes/:taskID");
 
 app.delete("/api/notes/:id", (req, res) => {
+  console.info(`${req.method} request received to delete a note.`);
   const { id } = req.params;
-  // bring out the notes from db.json
   if (id) {
     readFile("./db/db.json")
       .then((data) => {

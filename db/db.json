@@ -1,17 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text lorem ipsum",
-        "noteID": "d32k"
-    },
-    {
-        "title": "See Doctor",
-        "text": "Need to book an appointment",
-        "noteID": "3000"
-    },
-    {
-        "title": "Fishing",
-        "text": "See frank and call him",
-        "noteID": "a596"
+        "title": "add another one",
+        "text": "yes lets add another one",
+        "noteID": "508b"
     }
 ]
