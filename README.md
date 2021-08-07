@@ -6,3 +6,4 @@ This app is an browser-based organiser that keeps track of thoughts and tasks. T
 
 - Ability to add note title and text that persist in designated database.
 - Ability to remove title and text if the user wishes to do so.
+- Integration of the frontend and backend (express js)

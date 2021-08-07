@@ -1,7 +1,17 @@
 [
     {
-        "title": "add another one",
-        "text": "yes lets add another one",
-        "noteID": "508b"
+        "title": "Client lunch",
+        "text": "A client lunch schedule to happen on Friday.",
+        "noteID": "9050"
+    },
+    {
+        "title": "Birthday Prep",
+        "text": "Amy's birthday is today.",
+        "noteID": "2035"
+    },
+    {
+        "title": "Visit Keith",
+        "text": "Pay Keith a visit for a chit chat.",
+        "noteID": "800e"
     }
 ]
