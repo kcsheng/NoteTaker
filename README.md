@@ -5,4 +5,4 @@ This app is an browser-based organiser that keeps track of thoughts and tasks. T
 ### Features
 
 - Ability to add note title and text that persist in designated database.
-- Ability to remove title and text if the user wish to do so.
+- Ability to remove title and text if the user wishes to do so.
