@@ -1,6 +1,6 @@
 ## Note Taker
 
-This app is an browser-based organiser that keeps track of thoughts and tasks. The app has both frontend and backend connected and is deployed to Heroku. The app can be a accessed [here](https://note-taker-kcsheng.herokuapp.com/).
+This app is a browser-based organiser that keeps track of thoughts and tasks. The app has both frontend and backend connected and is deployed to Heroku. The app can be a accessed [here](https://note-taker-kcsheng.herokuapp.com/).
 
 ### Features
 
